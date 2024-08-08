@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="./JS/product.js" defer></script>
+</head>
+<body>
+    <form id="newProductForm">
+        <h3>Add New Product</h3>
+        <input type="text" id="productName" placeholder="Product Name">
+        <input type="number" id="productPrice" placeholder="Product Price" min="5">
+        <button type="submit">Add Product</button>
+        <p id="productMessage"></p>
+    </form>
+    <div id="products">
+
+      
+
+        <h2>Products</h2>
+        <div id="productList">
+            <div class="product-item">
+                <span>Product - $3000</span>
+                <button class="trash-btn">🗑️</button>
+            </div>
+        </div>
+
+        <button class="logout">Logout</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./JS/product.js"></script>
+</body>
+</html>
